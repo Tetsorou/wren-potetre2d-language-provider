@@ -1,31 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "wren-language-provider",
-    "displayName": "Wren Language Provider",
-    "description": "",
-    "version": "0.0.5",
-    "publisher": "sponge",
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sponge/wren-language-provider"
-    },
-    "homepage": "https://github.com/sponge/wren-language-provider",
-    "languages": [
-        {
-            "id": "wren"
-        }
-    ],
-    "activationEvents": [
-        "onLanguage:wren"
-    ],
-    "capabilities": {
-=======
   "name": "wren-potetre2d-language-provider",
   "displayName": "wren-potetre2d-language-provider",
   "description": "a wren language provider with potetre2d support",
@@ -50,7 +23,6 @@
     "onLanguage:wren"
   ],
   "capabilities": {
->>>>>>> b128811 (got it all working, mostly)
         "signatureHelpProvider": {
             "triggerCharacters": [
                 "("
@@ -63,40 +35,6 @@
             ]
         }
     },
-<<<<<<< HEAD
-    "main": "./out/extension",
-    "contributes": {
-        "configuration": [
-            {
-                "type": "object",
-                "title": "Wren Configuration",
-                "properties": {
-                    "wren.additionalModuleDirectories": {
-                        "type": "array",
-                        "default": "",
-                        "description": "Additional directory to scan for .wren files"
-                    }
-                }
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/bluebird": "^3.5.23",
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^8.10.25",
-        "bluebird": "^3.5.1",
-        "tslint": "^5.8.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21"
-    }
-=======
   "main": "./dist/extension.js",
   "contributes": {
     "command": 
@@ -139,5 +77,4 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2"
   }
->>>>>>> b128811 (got it all working, mostly)
 }
