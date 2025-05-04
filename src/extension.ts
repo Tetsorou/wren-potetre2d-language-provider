@@ -1,7 +1,14 @@
 'use strict';
+<<<<<<< HEAD
 import * as vscode from 'vscode';
 import WrenManager from './wrenmanager';
 import * as path from 'path';
+=======
+
+import WrenManager from './wrenmanager';
+import * as path from 'path';
+import * as vscode from 'vscode';
+>>>>>>> b128811 (got it all working, mostly)
 import * as fs from 'fs';
 
 const WREN_MODE: vscode.DocumentFilter = { language: 'wren', scheme: 'file' };
